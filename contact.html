@@ -81,17 +81,90 @@
         </nav>
       </header>
       <main>
-        <div class="contact-container">
+        <div class="contact-container m-3">
           <div class="card w-50">
             <div class="card-body">
+              <div class="gif-container">
+                <img
+                  src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNG5yNmMxc3BsZmE3cm9jMnI2ZnMyaGtzcGJubGpubHo0OTk1ZDF1byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/JIX9t2j0ZTN9S/giphy.gif"
+                  class="img-fluid rounded-3"
+                  alt="cat"
+                />
+              </div>
               <h5 class="card-title">Contact Us</h5>
-              <p class="card-text">
-                We'd love to hear from you! If you have any questions, comments,
-                or concerns, please don't hesitate to get in touch with us. You
-                can reach us via email at
-                <a href="mailto:ZaX1D@example.com">ZaX1D@example.com</a> or by
-                phone at (123) 456-7890.
-              </p>
+              <form
+                class="row g-3"
+                id="contact-form"
+                action="https://httpbin.org/post"
+                method="post"
+              >
+                <div class="col-md-6">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="email-confirm" class="form-label"
+                    >Confirm Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email-confirm"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="location" class="form-label">Location</label>
+                  <select
+                    name="location"
+                    id="location"
+                    class="form-select w-50 m-auto"
+                  >
+                    <option value="none">--</option>
+                    <option value="Tatooine">Tatooine</option>
+                    <option value="Coruscant">Coruscant</option>
+                    <option value="Mygeeto">Mygeeto</option>
+                    <option value="Yavin-IV">Yavin IV (Coming Soon)</option>
+                  </select>
+                </div>
+                <div class="col-md-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="3"
+                    required
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">
+                    Send Message
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
