@@ -10,7 +10,7 @@ This project was assigned by Per Scholas as part of technical training in softwa
 
 ## Authors
 
-Gregory Jung [githubtenor2000](https://github.com/tenor2000)
+Gregory Jung - [tenor2000](https://github.com/tenor2000)
 
 ## License
 
@@ -18,6 +18,6 @@ This project is licensed under the [NAME HERE] License - see the LICENSE.md file
 
 ## Acknowledgments
 
-- styling [bootstrap 5.3.3] (https://getbootstrap.com/)
-- images obtained from [Pexels] (https://www.pexels.com/)
-- Readme template [DomPizzie](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
+- styling - [bootstrap 5.3.3](https://getbootstrap.com/)
+- images - [Pexels](https://www.pexels.com/)
+- readme template - [DomPizzie](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
