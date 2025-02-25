@@ -4,7 +4,7 @@
   --tertiary-color: #a33d3d;
   --quaternary-color: #3e2c2a;
   --accent-color: #cbaa6e;
-  --secondary-accent-color: #f4a261;
+  --secondary-accent-color: lightblue;
   --contrast-color: #2c3e50;
 }
 
@@ -28,6 +28,43 @@ body {
   height: 50px;
   background-color: var(--accent-color);
   border-radius: 50%;
+  transform: background-color 0.5s ease-in-out;
+}
+
+.brand-logo:hover {
+  background-color: var(--secondary-accent-color);
+  animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.glow-text {
+  display: inline-block;
+  transform: scale(1);
+  animation: pulse 5s infinite;
+  transition: color 5s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    color: black;
+  }
+  50% {
+    transform: scale(1.1);
+    color: red;
+  }
+  100% {
+    transform: scale(1);
+    color: black;
+  }
 }
 
 .container {
@@ -51,6 +88,15 @@ body {
   flex-direction: column;
   text-align: center;
   padding: 1rem;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hero-title-bar:hover {
+  opacity: 0.9;
+}
+
+.nav-link {
+  color: var(--secondary-color);
 }
 
 .row {
@@ -71,18 +117,14 @@ body {
   text-align: center;
 }
 
-.section-height {
-  height: 100vh;
+.gif-container {
+  display: block;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding: 1rem;
 }
 
-.custom-card-spacing {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-.custom-join {
-  position: absolute;
-  opacity: 80%;
-  background-color: rgba(0, 0, 0, 0.8);
+.marquee {
+  font-size: 1.5rem;
 }
